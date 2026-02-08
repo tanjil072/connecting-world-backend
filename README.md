@@ -24,7 +24,6 @@ A lightweight Node.js/Express backend for a social media feed application with u
 
 - **Full API Documentation**: See [API_DOCS.md](API_DOCS.md)
 - **Environment Setup**: See [../.env.example](../.env.example) and [.env.example](.env.example)
-- **Build Guide**: See [../BUILD_GUIDE.md](../BUILD_GUIDE.md)
 
 ## 🔧 Prerequisites
 
@@ -318,13 +317,6 @@ NODE_ENV=production npm start
 - **Railway**: Push code directly
 - **Render**: Connect GitHub repo
 
-## 📝 Related Documentation
-
-- [Full API Documentation](API_DOCS.md)
-- [Environment Guide](../ENV_GUIDE.md)
-- [Frontend Setup](../QUICK_START.md)
-- [Build Guide](../BUILD_GUIDE.md)
-
 ## 📞 Support
 
 Issues or questions?
@@ -335,11 +327,7 @@ Issues or questions?
 4. Check MongoDB connection
 5. Ensure Firebase credentials are correct
 
-## 📄 License
-
-MIT
-
 ---
 
 **Last Updated**: February 2026  
-**Maintainer**: Connecting World Team
+**Maintainer**: Tanjil-Fullstack Developer

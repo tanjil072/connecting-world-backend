@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Data
+data/
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+lerna-debug.*
+.pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings
+.classpath
+
+# Testing
+coverage/
+.nyc_output
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Firebase
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+.firebase/
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

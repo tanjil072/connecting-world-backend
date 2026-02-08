@@ -1,5 +1,4 @@
 import * as admin from "firebase-admin";
-import * as path from "path";
 import { FCMToken, Notification } from "../models";
 
 let isFirebaseInitialized = false;
@@ -8,14 +7,19 @@ export async function initializeFirebase() {
   try {
     if (isFirebaseInitialized) return;
 
-    // Initialize Firebase Admin SDK with service account file
-    const serviceAccountPath = path.join(
-      __dirname,
-      "../../../connectingworld-76bdc-firebase-adminsdk-fbsvc-2a53a95763.json",
-    );
+    // Initialize Firebase Admin SDK with service account from environment variable
+    const serviceAccountJson = process.env.FIREBASE_SERVICE_ACCOUNT;
+
+    if (!serviceAccountJson) {
+      throw new Error(
+        "FIREBASE_SERVICE_ACCOUNT environment variable is not set",
+      );
+    }
+
+    const serviceAccount = JSON.parse(serviceAccountJson);
 
     admin.initializeApp({
-      credential: admin.credential.cert(serviceAccountPath),
+      credential: admin.credential.cert(serviceAccount),
     });
 
     console.log("Firebase initialized successfully");

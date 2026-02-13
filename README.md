@@ -71,8 +71,8 @@ CORS_ORIGIN=*
 # For production: https://your-app-domain.com
 
 # Firebase
-FIREBASE_PROJECT_ID=connectingworld-76bdc
-FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc-2a53a95763@connectingworld-76bdc.iam.gserviceaccount.com
+FIREBASE_PROJECT_ID=firebase project id
+FIREBASE_CLIENT_EMAIL=firebase client email
 FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYour key here\n-----END PRIVATE KEY-----\n"
 ```
 
